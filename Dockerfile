@@ -35,7 +35,7 @@ RUN cargo build --release ${CARGO_ARGS}
 # Run Stage
 # ------------------------------------------------------------------------------
 
-FROM registry.access.redhat.com/ubi9/ubi-minimal:9.2
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.4
 
 # shadow-utils is required for `useradd`
 RUN PKGS="libgcc libstdc++ shadow-utils" \
