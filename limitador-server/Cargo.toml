@@ -20,7 +20,7 @@ distributed_storage = ["limitador/distributed_storage"]
 [dependencies]
 limitador = { path = "../limitador", features = ['lenient_conditions'] }
 tokio = { version = "1", features = ["full"] }
-thiserror = "1"
+thiserror = "2"
 tonic = "0.12.3"
 tonic-reflection = "0.12.3"
 prost = "0.13.3"
