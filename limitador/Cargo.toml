@@ -36,7 +36,7 @@ metrics = "0.22.3"
 
 # Optional dependencies
 rocksdb = { version = "0.22", optional = true, features = ["multi-threaded-cf"] }
-redis = { version = "0.27", optional = true, features = [
+redis = { version = "0.32", optional = true, features = [
     "connection-manager",
     "tokio-comp",
     "tls-native-tls",
@@ -64,7 +64,7 @@ time = "0.3.36"
 serial_test = "3.0"
 criterion = { version = "0.5.1", features = ["html_reports", "async_tokio"] }
 redis-test = { version = "0.6.0", features = ["aio"] }
-redis = { version = "0.27", features = [
+redis = { version = "0.32", features = [
     "connection-manager",
     "tokio-comp",
     "tls-native-tls",
