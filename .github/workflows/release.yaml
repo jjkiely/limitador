@@ -17,7 +17,7 @@ jobs:
       - uses: abelfodil/protoc-action@v1
         with:
           protoc-version: '3.19.4'
-      - uses: supercharge/redis-github-action@1.1.0
+      - uses: supercharge/redis-github-action@1.8.1
         with:
           redis-version: 7
       - uses: actions/checkout@v4
