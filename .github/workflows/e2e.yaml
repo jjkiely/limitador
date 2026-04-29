@@ -26,7 +26,7 @@ jobs:
             type=raw,value=latest
       - name: Build Limitador Image
         id: build-image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v7
         with:
           context: .
           tags: ${{ steps.meta.outputs.tags }}
