@@ -60,7 +60,7 @@ jobs:
           # use 'wait' to check for Available status in .status.conditions[]
           kubectl wait deployment limitador --for condition=Available=True --timeout=300s
       - name: Read limits from HTTP endpoint
-        uses: nick-fields/retry@v2
+        uses: nick-fields/retry@v4
         with:
           timeout_seconds: 10
           max_attempts: 10
@@ -79,7 +79,7 @@ jobs:
         run: |
           limitador-server/e2e/file-watcher/watch-pod-env.sh </dev/null 2>/dev/null &
       - name: Read new limits from HTTP endpoint
-        uses: nick-fields/retry@v2
+        uses: nick-fields/retry@v4
         with:
           timeout_seconds: 10
           max_attempts: 10
