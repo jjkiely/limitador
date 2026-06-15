@@ -46,7 +46,7 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         if: env.CODECOV_TOKEN != null
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v7
         with:
           verbose: true
           fail_ci_if_error: false
