@@ -21,8 +21,8 @@ distributed_storage = ["limitador/distributed_storage"]
 limitador = { path = "../limitador", features = ['lenient_conditions'] }
 tokio = { version = "1", features = ["full"] }
 thiserror = "1"
-tonic = "0.12.3"
-tonic-reflection = "0.12.3"
+tonic = "0.14.0"
+tonic-reflection = "0.14.0"
 prost = "0.13.3"
 prost-types = "0.13.3"
 serde_yaml = "0.9"
@@ -51,4 +51,4 @@ metrics-exporter-prometheus = "0.14.0"
 
 
 [build-dependencies]
-tonic-build = "0.11"
+tonic-build = "0.14"
