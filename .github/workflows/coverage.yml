@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@v2
       - uses: Swatinem/rust-cache@v2
       - uses: abelfodil/protoc-action@v1
         with:
@@ -31,7 +31,7 @@ jobs:
           redis-version: 7
       # Nightly is required for code coverage with doctests
       # https://github.com/taiki-e/cargo-llvm-cov/issues/2
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@v2
         with:
           toolchain: nightly
       - uses: Swatinem/rust-cache@v2
